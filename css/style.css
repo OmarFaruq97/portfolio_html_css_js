@@ -1,0 +1,150 @@
+/* ============ GLOBAL STYLES ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  margin-left: 260px;
+  transition: margin-left 0.3s ease;
+}
+
+/* ============ SIDEBAR ============ */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #e1e5eb;
+  padding: 30px 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0d6efd;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.sidebar h4 {
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.sidebar .text-muted {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.sidebar-bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #555;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #0d6efd;
+  transform: translateY(-3px);
+}
+
+/* ============ NAVBAR ============ */
+.navbar {
+  margin-left: 260px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.nav-link {
+  cursor: pointer;
+  padding: 10px 15px !important;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/* ============ CONTENT AREA ============ */
+.content {
+  padding: 100px 40px 40px 40px;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ============ RESPONSIVE DESIGN ============ */
+@media (max-width: 992px) {
+  body {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .navbar {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .content {
+    padding: 80px 20px 20px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 70px 15px 15px 15px;
+  }
+
+  .nav-link {
+    padding: 8px 10px !important;
+    margin: 2px;
+    font-size: 0.9rem;
+  }
+}

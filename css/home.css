@@ -1,13 +1,13 @@
 /* ============ HOME PAGE STYLES ============ */
 .hero {
   text-align: center;
-  padding: 60px 0 40px 0;
+  padding: 0px  auto ;
   animation: fadeIn 1s ease;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #2c3e50;
   font-weight: 700;
 }

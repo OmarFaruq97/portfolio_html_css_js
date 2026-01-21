@@ -540,106 +540,102 @@ body {
   }
 }
 /*education end*/
-/* ============ EXPERIENCE SECTION ============ */
+
 /* ============ EXPERIENCE SECTION ============ */
 .experience-section {
-  padding: 0px 0px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 0px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .experience-section .section-title {
   text-align: center;
   color: #2c3e50;
-  font-size: 2.5rem; /* Reduced from 2.5rem */
-  margin-bottom: 3px; /* Reduced from 5px */
+  font-size: 2.2rem;
+  margin-bottom: 40px;
   position: relative;
 }
 
 .experience-section .section-title::after {
   content: "";
   display: block;
-  width: 100px; /* Reduced from 80px */
-  height: 4px; /* Reduced from 3px */
+  width: 80px;
+  height: 4px;
   background: linear-gradient(to right, #0d6efd, #0dcaf0);
-  margin: 5px auto 0; /* Reduced from 10px */
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
-/* Experience Timeline */
+/* Experience Timeline - SAME AS EDUCATION */
 .experience-timeline {
   position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 5px 0; /* Reduced from 10px */
+  padding-left: 30px;
 }
 
 .experience-timeline::before {
   content: "";
   position: absolute;
-  left: 20px; /* Reduced from 25px */
+  left: 15px;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 3px;
   background: linear-gradient(to bottom, #0d6efd, #0dcaf0);
-  border-radius: 1px; /* Reduced from 2px */
+  border-radius: 3px;
 }
 
-/* Experience Items */
+/* Experience Items - SAME AS EDUCATION */
 .experience-item {
   background: white;
-  border-radius: 10px; /* Reduced from 12px */
-  padding: 20px; /* Reduced from 25px */
-  margin-bottom: 15px; /* Reduced from 25px */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Reduced shadow */
-  border-left: 3px solid #0d6efd; /* Reduced from 4px */
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #0d6efd;
   position: relative;
-  margin-left: 50px; /* Reduced from 60px */
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-item:hover {
-  transform: translateY(-2px); /* Reduced from -3px */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Reduced shadow */
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
 .experience-item::before {
   content: "";
   position: absolute;
-  left: -28px; /* Reduced from -35px */
-  top: 25px; /* Reduced from 35px */
-  width: 14px; /* Reduced from 16px */
-  height: 14px; /* Reduced from 16px */
+  left: -38px;
+  top: 40px;
+  width: 20px;
+  height: 20px;
   background: #0d6efd;
   border-radius: 50%;
-  border: 2px solid white; /* Reduced from 3px */
-  box-shadow: 0 0 0 1px #0d6efd; /* Reduced from 2px */
+  border: 4px solid white;
+  box-shadow: 0 0 0 3px #0d6efd;
 }
 
 /* Experience Header */
 .experience-header {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 15px; /* Reduced from 20px */
-  padding-bottom: 15px; /* Reduced from 20px */
-  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
 }
 
 .company-logo {
-  margin-right: 15px; /* Reduced from 20px */
+  margin-right: 15px;
 }
 
 .logo-placeholder {
-  width: 50px; /* Reduced from 60px */
-  height: 50px; /* Reduced from 60px */
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, #0d6efd, #0dcaf0);
   color: white;
-  border-radius: 8px; /* Reduced from 10px */
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem; /* Reduced from 1.6rem */
+  font-size: 1.6rem;
   font-weight: bold;
-  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.2); /* Reduced shadow */
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
 }
 
 .experience-title {
@@ -648,59 +644,59 @@ body {
 
 .experience-title h3 {
   color: #2c3e50;
-  font-size: 1.3rem; /* Reduced from 1.4rem */
-  margin: 0 0 5px 0; /* Reduced from 8px */
+  font-size: 1.4rem;
+  margin: 0 0 8px 0;
   font-weight: 700;
 }
 
 .company-name {
   color: #0d6efd;
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 1rem;
   font-weight: 600;
-  margin: 0 0 8px 0; /* Reduced from 10px */
+  margin: 0 0 10px 0;
   display: block;
 }
 
 .experience-meta {
   display: flex;
   align-items: center;
-  gap: 10px; /* Reduced from 15px */
+  gap: 15px;
   flex-wrap: wrap;
 }
 
 .date-range {
   color: #666;
   font-weight: 500;
-  font-size: 0.85rem; /* Reduced from 0.9rem */
+  font-size: 0.9rem;
   background: #f8f9fa;
-  padding: 3px 10px; /* Reduced from 4px 12px */
-  border-radius: 15px; /* Reduced from 18px */
+  padding: 4px 12px;
+  border-radius: 18px;
 }
 
 .duration-badge {
   background: #e8f4fc;
   color: #0d6efd;
-  padding: 4px 12px; /* Reduced from 5px 15px */
-  border-radius: 15px; /* Reduced from 18px */
-  font-size: 0.8rem; /* Reduced from 0.85rem */
+  padding: 5px 15px;
+  border-radius: 18px;
+  font-size: 0.85rem;
   font-weight: 600;
-  border: 1px solid #cce5ff; /* Reduced from 2px */
+  border: 1px solid #cce5ff;
 }
 
 /* Experience Details */
 .experience-details {
-  margin-top: 10px; /* Reduced from 15px */
+  margin-top: 15px;
 }
 
 .role-description {
   color: #555;
-  line-height: 1.5; /* Reduced from 1.6 */
-  margin-bottom: 15px; /* Reduced from 20px */
-  font-size: 0.95rem; /* Reduced from 1rem */
-  padding: 10px; /* Reduced from 12px */
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 12px;
   background: #f8f9fa;
-  border-radius: 6px; /* Reduced from 8px */
-  border-left: 2px solid #0d6efd; /* Reduced from 3px */
+  border-radius: 8px;
+  border-left: 3px solid #0d6efd;
 }
 
 .role-description strong {
@@ -711,33 +707,33 @@ body {
 /* Responsibilities & Achievements */
 .responsibilities,
 .achievements {
-  margin: 20px 0; /* Reduced from 25px */
+  margin: 25px 0;
 }
 
 .responsibilities h4,
 .achievements h4,
 .tech-stack h4 {
   color: #2c3e50;
-  font-size: 1.1rem; /* Reduced from 1.2rem */
-  margin-bottom: 12px; /* Reduced from 15px */
+  font-size: 1.2rem;
+  margin-bottom: 15px;
   display: flex;
   align-items: center;
-  gap: 6px; /* Reduced from 8px */
+  gap: 8px;
 }
 
 .responsibilities h4::before {
   content: "📋";
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 1rem;
 }
 
 .achievements h4::before {
   content: "🏆";
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 1rem;
 }
 
 .tech-stack h4::before {
   content: "💻";
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 1rem;
 }
 
 .responsibilities ul,
@@ -749,12 +745,12 @@ body {
 
 .responsibilities li,
 .achievements li {
-  padding: 8px 0; /* Reduced from 10px */
-  padding-left: 25px; /* Reduced from 30px */
+  padding: 10px 0;
+  padding-left: 30px;
   position: relative;
   color: #555;
-  line-height: 1.4; /* Reduced from 1.5 */
-  font-size: 0.9rem; /* Reduced from 0.95rem */
+  line-height: 1.5;
+  font-size: 0.95rem;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -766,604 +762,197 @@ body {
 .responsibilities li::before {
   content: "→";
   position: absolute;
-  left: 6px; /* Reduced from 8px */
+  left: 8px;
   color: #0d6efd;
   font-weight: bold;
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 1rem;
 }
 
 .achievements li::before {
   content: "✓";
   position: absolute;
-  left: 6px; /* Reduced from 8px */
+  left: 8px;
   color: #28a745;
   font-weight: bold;
-  font-size: 0.9rem; /* Reduced from 1rem */
+  font-size: 1rem;
 }
 
 /* Tech Stack */
 .tech-stack {
-  margin: 20px 0; /* Reduced from 25px */
-  padding: 15px; /* Reduced from 20px */
+  margin: 25px 0;
+  padding: 20px;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  border-radius: 8px; /* Reduced from 10px */
+  border-radius: 10px;
   border: 1px solid #e9ecef;
 }
 
 .tech-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; /* Reduced from 10px */
+  gap: 10px;
 }
 
 .tech-tag {
   background: white;
   color: #0d6efd;
-  padding: 6px 12px; /* Reduced from 8px 16px */
-  border-radius: 18px; /* Reduced from 20px */
-  font-size: 0.85rem; /* Reduced from 0.9rem */
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
   font-weight: 600;
   border: 1px solid #dee2e6;
   transition: all 0.3s ease;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05); /* Reduced shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 .tech-tag:hover {
   background: linear-gradient(135deg, #0d6efd, #0dcaf0);
   color: white;
-  transform: translateY(-1px); /* Reduced from -2px */
-  box-shadow: 0 3px 8px rgba(13, 110, 253, 0.2); /* Reduced shadow */
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
   border-color: transparent;
 }
 
-/* Responsive Design */
+/* Responsive Design - SAME AS EDUCATION */
 @media (max-width: 768px) {
   .experience-section {
-    padding: 20px 5px; /* Reduced from 30px 10px */
+    padding: 0px 15px;
   }
 
   .experience-section .section-title {
-    font-size: 1.5rem; /* Reduced from 1.6rem */
-    margin-bottom: 15px; /* Reduced from 25px */
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .experience-timeline {
+    padding-left: 25px;
   }
 
   .experience-timeline::before {
-    left: 15px; /* Reduced from 20px */
+    left: 12px;
   }
 
   .experience-item {
-    margin-left: 30px; /* Reduced from 40px */
-    padding: 15px; /* Reduced from 20px */
+    padding: 20px;
+    margin-bottom: 20px;
   }
 
   .experience-item::before {
-    left: -22px; /* Reduced from -30px */
-    top: 20px; /* Reduced from 25px */
+    left: -30px;
+    top: 30px;
   }
 
   .company-logo {
-    margin-bottom: 10px; /* Reduced from 15px */
+    margin-bottom: 10px;
   }
 
   .logo-placeholder {
-    width: 40px; /* Reduced from 50px */
-    height: 40px; /* Reduced from 50px */
-    font-size: 1.2rem; /* Reduced from 1.4rem */
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
   }
 
   .experience-title h3 {
-    font-size: 1.1rem; /* Reduced from 1.3rem */
-    margin-bottom: 4px; /* Reduced from 5px */
+    font-size: 1.2rem;
+    margin-bottom: 5px;
   }
 
   .company-name {
-    font-size: 0.85rem; /* Reduced from 0.9rem */
-    margin-bottom: 6px; /* Reduced from 8px */
+    font-size: 0.9rem;
+    margin-bottom: 8px;
   }
 
   .experience-meta {
-    gap: 8px; /* Reduced from 10px */
+    gap: 10px;
   }
 
   .date-range,
   .duration-badge {
-    font-size: 0.8rem; /* Reduced from 0.85rem */
-    padding: 2px 8px; /* Reduced from 3px 10px */
+    font-size: 0.85rem;
+    padding: 3px 10px;
   }
 
   .responsibilities li,
   .achievements li {
-    padding-left: 20px; /* Reduced from 25px */
-    font-size: 0.85rem; /* Reduced from 0.9rem */
-    padding: 6px 0; /* Reduced from 8px */
+    padding-left: 25px;
+    font-size: 0.9rem;
+    padding: 8px 0;
   }
 
   .tech-tags {
-    gap: 5px; /* Reduced from 6px */
+    gap: 8px;
   }
 
   .tech-tag {
-    padding: 5px 10px; /* Reduced from 6px 12px */
-    font-size: 0.8rem; /* Reduced from 0.85rem */
+    padding: 6px 12px;
+    font-size: 0.85rem;
   }
 
   .responsibilities,
   .achievements {
-    margin: 15px 0; /* Reduced from 20px */
+    margin: 20px 0;
   }
 
   .responsibilities h4,
   .achievements h4,
   .tech-stack h4 {
-    font-size: 1rem; /* Reduced from 1.1rem */
-    margin-bottom: 10px; /* Reduced from 12px */
+    font-size: 1.1rem;
+    margin-bottom: 12px;
   }
 
   .tech-stack {
-    padding: 12px; /* Reduced from 15px */
-    margin: 15px 0; /* Reduced from 20px */
+    padding: 15px;
+    margin: 20px 0;
   }
 
   .role-description {
-    padding: 8px; /* Reduced from 10px */
-    margin-bottom: 12px; /* Reduced from 15px */
-    font-size: 0.9rem; /* Reduced from 0.95rem */
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
   .experience-timeline::before {
-    display: none;
+    display: block;
   }
 
   .experience-item {
-    margin-left: 0;
-    padding: 12px; /* Reduced from 15px */
+    padding: 20px 15px;
   }
 
   .experience-title h3 {
-    font-size: 1rem; /* Reduced from 1.2rem */
+    font-size: 1.1rem;
   }
 
   .company-name {
-    font-size: 0.8rem; /* Reduced from 0.9rem */
+    font-size: 0.85rem;
   }
 
   .role-description {
-    font-size: 0.85rem; /* Reduced from 0.9rem */
-    padding: 8px; /* Reduced from 10px */
+    font-size: 0.9rem;
+    padding: 10px;
   }
 
   .responsibilities h4,
   .achievements h4,
   .tech-stack h4 {
-    font-size: 0.95rem; /* Reduced from 1.1rem */
+    font-size: 1rem;
   }
 
   .tech-stack {
-    padding: 10px; /* Reduced from 15px */
+    padding: 15px;
   }
 
-  .tech-tags {
-    justify-content: center;
-  }
-}
-/*end of experience section*/
-/* ============ EXPERIENCE SECTION ============ */
-.experience-section {
-  padding: 0px 0px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-}
-
-.experience-section .section-title {
-  text-align: center;
-  color: #2c3e50;
-  font-size: 2.5rem;
-  margin-bottom: 10px; /* Kept reasonable for title */
-  position: relative;
-}
-
-.experience-section .section-title::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 4px;
-  background: linear-gradient(to right, #0d6efd, #0dcaf0);
-  margin: 8px auto 0;
-  border-radius: 2px;
-}
-
-/* Experience Timeline - MINIMIZED */
-.experience-timeline {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 3px 0; /* Reduced from 5px */
-}
-
-.experience-timeline::before {
-  content: "";
-  position: absolute;
-  left: 18px; /* Reduced from 20px */
-  top: 0;
-  bottom: 0;
-  width: 1.5px; /* Reduced from 2px */
-  background: linear-gradient(to bottom, #0d6efd, #0dcaf0);
-  border-radius: 1px;
-}
-
-/* Experience Items - EXTRA COMPACT */
-.experience-item {
-  background: white;
-  border-radius: 8px; /* Reduced from 10px */
-  padding: 15px; /* Reduced from 20px */
-  margin-bottom: 10px; /* Reduced from 15px */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06); /* Reduced shadow */
-  border-left: 2px solid #0d6efd; /* Reduced from 3px */
-  position: relative;
-  margin-left: 45px; /* Reduced from 50px */
-  transition: all 0.2s ease;
-}
-
-.experience-item:hover {
-  transform: translateY(-1px); /* Reduced from -2px */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08); /* Reduced shadow */
-}
-
-.experience-item::before {
-  content: "";
-  position: absolute;
-  left: -25px; /* Reduced from -28px */
-  top: 20px; /* Reduced from 25px */
-  width: 12px; /* Reduced from 14px */
-  height: 12px; /* Reduced from 14px */
-  background: #0d6efd;
-  border-radius: 50%;
-  border: 2px solid white;
-  box-shadow: 0 0 0 1px #0d6efd;
-}
-
-/* Experience Header - ULTRA COMPACT */
-.experience-header {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 12px; /* Reduced from 15px */
-  padding-bottom: 12px; /* Reduced from 15px */
-  border-bottom: 1px solid #eee;
-}
-
-.company-logo {
-  margin-right: 12px; /* Reduced from 15px */
-}
-
-.logo-placeholder {
-  width: 45px; /* Reduced from 50px */
-  height: 45px; /* Reduced from 50px */
-  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-  color: white;
-  border-radius: 7px; /* Reduced from 8px */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem; /* Reduced from 1.4rem */
-  font-weight: bold;
-  box-shadow: 0 1px 5px rgba(13, 110, 253, 0.15); /* Reduced shadow */
-}
-
-.experience-title {
-  flex: 1;
-}
-
-.experience-title h3 {
-  color: #2c3e50;
-  font-size: 1.2rem; /* Reduced from 1.3rem */
-  margin: 0 0 3px 0; /* Reduced from 5px */
-  font-weight: 700;
-}
-
-.company-name {
-  color: #0d6efd;
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-  font-weight: 600;
-  margin: 0 0 5px 0; /* Reduced from 8px */
-  display: block;
-}
-
-.experience-meta {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* Reduced from 10px */
-  flex-wrap: wrap;
-}
-
-.date-range {
-  color: #666;
-  font-weight: 500;
-  font-size: 0.8rem; /* Reduced from 0.85rem */
-  background: #f8f9fa;
-  padding: 2px 8px; /* Reduced from 3px 10px */
-  border-radius: 12px; /* Reduced from 15px */
-}
-
-.duration-badge {
-  background: #e8f4fc;
-  color: #0d6efd;
-  padding: 2px 8px; /* Reduced from 4px 12px */
-  border-radius: 12px; /* Reduced from 15px */
-  font-size: 0.75rem; /* Reduced from 0.8rem */
-  font-weight: 600;
-  border: 1px solid #cce5ff;
-}
-
-/* Experience Details - MINIMAL */
-.experience-details {
-  margin-top: 8px; /* Reduced from 10px */
-}
-
-.role-description {
-  color: #555;
-  line-height: 1.4; /* Reduced from 1.5 */
-  margin-bottom: 12px; /* Reduced from 15px */
-  font-size: 0.9rem; /* Reduced from 0.95rem */
-  padding: 8px; /* Reduced from 10px */
-  background: #f8f9fa;
-  border-radius: 5px; /* Reduced from 6px */
-  border-left: 2px solid #0d6efd;
-}
-
-.role-description strong {
-  color: #0d6efd;
-  font-weight: 600;
-}
-
-/* Responsibilities & Achievements - TIGHT */
-.responsibilities,
-.achievements {
-  margin: 15px 0; /* Reduced from 20px */
-}
-
-.responsibilities h4,
-.achievements h4,
-.tech-stack h4 {
-  color: #2c3e50;
-  font-size: 1rem; /* Reduced from 1.1rem */
-  margin-bottom: 8px; /* Reduced from 12px */
-  display: flex;
-  align-items: center;
-  gap: 5px; /* Reduced from 6px */
-}
-
-.responsibilities h4::before {
-  content: "📋";
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-}
-
-.achievements h4::before {
-  content: "🏆";
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-}
-
-.tech-stack h4::before {
-  content: "💻";
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-}
-
-.responsibilities ul,
-.achievements ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.responsibilities li,
-.achievements li {
-  padding: 6px 0; /* Reduced from 8px */
-  padding-left: 22px; /* Reduced from 25px */
-  position: relative;
-  color: #555;
-  line-height: 1.3; /* Reduced from 1.4 */
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.responsibilities li:last-child,
-.achievements li:last-child {
-  border-bottom: none;
-}
-
-.responsibilities li::before {
-  content: "→";
-  position: absolute;
-  left: 5px; /* Reduced from 6px */
-  color: #0d6efd;
-  font-weight: bold;
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-}
-
-.achievements li::before {
-  content: "✓";
-  position: absolute;
-  left: 5px; /* Reduced from 6px */
-  color: #28a745;
-  font-weight: bold;
-  font-size: 0.85rem; /* Reduced from 0.9rem */
-}
-
-/* Tech Stack - COMPACT */
-.tech-stack {
-  margin: 15px 0; /* Reduced from 20px */
-  padding: 12px; /* Reduced from 15px */
-  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-  border-radius: 6px; /* Reduced from 8px */
-  border: 1px solid #e9ecef;
-}
-
-.tech-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px; /* Reduced from 8px */
-}
-
-.tech-tag {
-  background: white;
-  color: #0d6efd;
-  padding: 4px 10px; /* Reduced from 6px 12px */
-  border-radius: 15px; /* Reduced from 18px */
-  font-size: 0.8rem; /* Reduced from 0.85rem */
-  font-weight: 600;
-  border: 1px solid #dee2e6;
-  transition: all 0.2s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04); /* Reduced shadow */
-}
-
-.tech-tag:hover {
-  background: linear-gradient(135deg, #0d6efd, #0dcaf0);
-  color: white;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.2); /* Reduced shadow */
-  border-color: transparent;
-}
-
-/* Responsive Design - EXTRA COMPACT */
-@media (max-width: 768px) {
-  .experience-section {
-    padding: 15px 3px; /* Reduced from 20px 5px */
-  }
-
-  .experience-section .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 8px; /* Reduced from 15px */
-  }
-
-  .experience-section .section-title::after {
-    width: 80px;
-    height: 3px;
-    margin: 5px auto 0;
-  }
-
-  .experience-timeline::before {
-    left: 12px; /* Reduced from 15px */
-  }
-
-  .experience-item {
-    margin-left: 25px; /* Reduced from 30px */
-    padding: 12px; /* Reduced from 15px */
-    margin-bottom: 8px; /* Reduced from 10px */
-  }
-
-  .experience-item::before {
-    left: -18px; /* Reduced from -22px */
-    top: 15px; /* Reduced from 20px */
-    width: 10px; /* Reduced from 12px */
-    height: 10px; /* Reduced from 12px */
-  }
-
-  .company-logo {
-    margin-right: 10px; /* Reduced from 12px */
-    margin-bottom: 8px; /* Reduced from 10px */
-  }
-
-  .logo-placeholder {
-    width: 35px; /* Reduced from 40px */
-    height: 35px; /* Reduced from 40px */
-    font-size: 1.1rem; /* Reduced from 1.2rem */
-  }
-
-  .experience-title h3 {
-    font-size: 1rem; /* Reduced from 1.1rem */
-    margin-bottom: 2px; /* Reduced from 4px */
-  }
-
-  .company-name {
-    font-size: 0.8rem; /* Reduced from 0.85rem */
-    margin-bottom: 4px; /* Reduced from 6px */
+  .experience-header {
+    flex-wrap: wrap;
   }
 
   .experience-meta {
-    gap: 6px; /* Reduced from 8px */
-  }
-
-  .date-range,
-  .duration-badge {
-    font-size: 0.75rem; /* Reduced from 0.8rem */
-    padding: 1px 6px; /* Reduced from 2px 8px */
-  }
-
-  .responsibilities li,
-  .achievements li {
-    padding-left: 18px; /* Reduced from 20px */
-    font-size: 0.8rem; /* Reduced from 0.85rem */
-    padding: 4px 0; /* Reduced from 6px */
-  }
-
-  .tech-tags {
-    gap: 4px; /* Reduced from 5px */
-  }
-
-  .tech-tag {
-    padding: 3px 8px; /* Reduced from 5px 10px */
-    font-size: 0.75rem; /* Reduced from 0.8rem */
-  }
-
-  .responsibilities,
-  .achievements {
-    margin: 12px 0; /* Reduced from 15px */
-  }
-
-  .responsibilities h4,
-  .achievements h4,
-  .tech-stack h4 {
-    font-size: 0.9rem; /* Reduced from 1rem */
-    margin-bottom: 6px; /* Reduced from 10px */
-  }
-
-  .tech-stack {
-    padding: 10px; /* Reduced from 12px */
-    margin: 12px 0; /* Reduced from 15px */
-  }
-
-  .role-description {
-    padding: 6px; /* Reduced from 8px */
-    margin-bottom: 10px; /* Reduced from 12px */
-    font-size: 0.85rem; /* Reduced from 0.9rem */
-  }
-}
-
-@media (max-width: 480px) {
-  .experience-timeline::before {
-    display: none;
-  }
-
-  .experience-item {
-    margin-left: 0;
-    padding: 10px; /* Reduced from 12px */
-  }
-
-  .experience-title h3 {
-    font-size: 0.95rem; /* Reduced from 1rem */
-  }
-
-  .company-name {
-    font-size: 0.75rem; /* Reduced from 0.8rem */
-  }
-
-  .role-description {
-    font-size: 0.8rem; /* Reduced from 0.85rem */
-    padding: 6px; /* Reduced from 8px */
-  }
-
-  .responsibilities h4,
-  .achievements h4,
-  .tech-stack h4 {
-    font-size: 0.85rem; /* Reduced from 0.95rem */
-  }
-
-  .tech-stack {
-    padding: 8px; /* Reduced from 10px */
+    width: 100%;
+    margin-top: 10px;
   }
 }
 /*end of experience section*/
-/*end of experience section */
 
 /* =========================About Section========================== */
 .about-section {

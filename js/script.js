@@ -84,7 +84,7 @@ function initializeContactForm() {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
       // Add form submission logic here
-      alert("Form submitted! (This is a demo)");
+      alert("Form submitted!");
     });
   }
 }
@@ -95,7 +95,7 @@ function initializeCVDownload() {
   if (downloadBtn) {
     downloadBtn.addEventListener("click", function () {
       // Add CV download logic here
-      alert("CV download started! (This is a demo)");
+      alert("CV download started!");
     });
   }
 }

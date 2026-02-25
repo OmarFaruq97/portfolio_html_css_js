@@ -1,12 +1,12 @@
 /* ============ HOME PAGE STYLES ============ */
 .hero {
   text-align: center;
-  padding: 0px  auto ;
+  padding: 60px 20px; /* Fixed the "0px auto" error */
   animation: fadeIn 1s ease;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem; /* Slightly larger for impact */
   margin-bottom: 10px;
   color: #2c3e50;
   font-weight: 700;
@@ -31,9 +31,10 @@
 .section-divider {
   margin: 50px auto;
   width: 100px;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(to right, #0d6efd, #0dcaf0);
   border: none;
+  border-radius: 10px;
   opacity: 1;
 }
 
@@ -64,34 +65,50 @@
   line-height: 1.7;
 }
 
+.what-i-do li i {
+  color: #0d6efd; /* Color for the small icons in the list */
+}
+
 .what-i-do li:last-child {
   border-bottom: none;
 }
 
-.what-i-do strong {
-  color: #0d6efd;
-  font-weight: 600;
+/* Social Link Styling */
+.social-icon {
+    font-size: 1.5rem;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    color: #0dcaf0;
+}
+
+/* ============ RESPONSIVENESS ============ */
+@media (max-width: 992px) {
+    body {
+        margin-left: 0 !important; /* Removes the 260px gap on tablets/phones */
+    }
+    .sidebar {
+        display: none; /* Hide sidebar on mobile - you can add a burger menu later */
+    }
+    nav.navbar {
+        margin-left: 0 !important;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }

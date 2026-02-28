@@ -1,37 +1,29 @@
-/* ============ HOME PAGE STYLES ============ */
+/* ============ HOME PAGE STYLES (COMPACT VERSION) ============ */
 .hero {
   text-align: center;
-  padding: 60px 20px; /* Fixed the "0px auto" error */
+  padding: 30px 15px; /* Padding 60px theke 30px kora hoyeche */
   animation: fadeIn 1s ease;
 }
 
 .hero h1 {
-  font-size: 3.5rem; /* Slightly larger for impact */
-  margin-bottom: 10px;
+  font-size: 2.5rem; /* Font size 3.5 theke 2.5 kora hoyeche */
+  margin-bottom: 5px;
   color: #2c3e50;
   font-weight: 700;
 }
 
-.highlight {
-  color: #0d6efd;
-  background: linear-gradient(120deg, #0d6efd 0%, #0dcaf0 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .tagline {
-  font-size: 1.3rem;
+  font-size: 1.1rem; /* Font size 1.3 theke 1.1 kora hoyeche */
   color: #555;
-  max-width: 800px;
+  max-width: 650px; /* Width ektu komano hoyeche */
   margin: 0 auto;
-  line-height: 1.8;
+  line-height: 1.5; /* Line height komano hoyeche */
 }
 
 .section-divider {
-  margin: 50px auto;
-  width: 100px;
-  height: 4px;
+  margin: 25px auto; /* Margin 50px theke 25px kora hoyeche */
+  width: 60px; /* Width 100 theke 60 kora hoyeche */
+  height: 3px;
   background: linear-gradient(to right, #0d6efd, #0dcaf0);
   border: none;
   border-radius: 10px;
@@ -40,39 +32,27 @@
 
 .what-i-do {
   background: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+  padding: 25px; /* Padding 40px theke 25px kora hoyeche */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   animation: slideUp 1s ease;
+  max-width: 700px; /* Section-ta jate boro na hoy tai width set kora hoyeche */
+  margin: 0 auto;
 }
 
 .what-i-do h2 {
   color: #2c3e50;
-  margin-bottom: 30px;
+  margin-bottom: 15px; /* Margin 30 theke 15 kora hoyeche */
   text-align: center;
-  font-size: 2.2rem;
-}
-
-.what-i-do ul {
-  list-style-type: none;
-  padding: 0;
+  font-size: 1.8rem; /* Font size 2.2 theke 1.8 kora hoyeche */
 }
 
 .what-i-do li {
-  padding: 15px 0;
+  padding: 8px 0; /* List-er gap 15 theke 8 kora hoyeche */
   border-bottom: 1px solid #eee;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem; /* Font size 1.1 theke 1.0 kora hoyeche */
+  line-height: 1.5;
 }
-
-.what-i-do li i {
-  color: #0d6efd; /* Color for the small icons in the list */
-}
-
-.what-i-do li:last-child {
-  border-bottom: none;
-}
-
 /* Social Link Styling */
 .social-icon {
     font-size: 13px;
@@ -89,7 +69,7 @@
 /* ============ RESPONSIVENESS ============ */
 @media (max-width: 992px) {
     body {
-        margin-left: 0 !important; /* Removes the 260px gap on tablets/phones */
+        margin-left: 0 !important; 
     }
     .sidebar {
         display: none; /* Hide sidebar on mobile - you can add a burger menu later */
